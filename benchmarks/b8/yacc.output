@@ -1,0 +1,287 @@
+Terminals unused in grammar
+
+   NUM
+
+
+Grammar
+
+    0 $accept: S $end
+
+    1 S: S1 '\n'
+
+    2 S1: E ';' M3 S1
+    3   | E ';'
+
+    4 E: T M1 L
+
+    5 T: INT
+    6  | REAL
+
+    7 L: VAR ',' M2 L
+    8  | VAR
+
+    9 VAR: 'a'
+   10    | 'b'
+   11    | 'c'
+   12    | 'd'
+
+   13 INT: 'i'
+
+   14 REAL: 'r'
+
+   15 M1: %empty
+
+   16 M2: %empty
+
+   17 M3: %empty
+
+
+Terminals, with rules where they appear
+
+$end (0) 0
+'\n' (10) 1
+',' (44) 7
+';' (59) 2 3
+'a' (97) 9
+'b' (98) 10
+'c' (99) 11
+'d' (100) 12
+'i' (105) 13
+'r' (114) 14
+error (256)
+NUM (258)
+
+
+Nonterminals, with rules where they appear
+
+$accept (13)
+    on left: 0
+S (14)
+    on left: 1, on right: 0
+S1 (15)
+    on left: 2 3, on right: 1 2
+E (16)
+    on left: 4, on right: 2 3
+T (17)
+    on left: 5 6, on right: 4
+L (18)
+    on left: 7 8, on right: 4 7
+VAR (19)
+    on left: 9 10 11 12, on right: 7 8
+INT (20)
+    on left: 13, on right: 5
+REAL (21)
+    on left: 14, on right: 6
+M1 (22)
+    on left: 15, on right: 4
+M2 (23)
+    on left: 16, on right: 7
+M3 (24)
+    on left: 17, on right: 2
+
+
+State 0
+
+    0 $accept: . S $end
+
+    'i'  shift, and go to state 1
+    'r'  shift, and go to state 2
+
+    S     go to state 3
+    S1    go to state 4
+    E     go to state 5
+    T     go to state 6
+    INT   go to state 7
+    REAL  go to state 8
+
+
+State 1
+
+   13 INT: 'i' .
+
+    $default  reduce using rule 13 (INT)
+
+
+State 2
+
+   14 REAL: 'r' .
+
+    $default  reduce using rule 14 (REAL)
+
+
+State 3
+
+    0 $accept: S . $end
+
+    $end  shift, and go to state 9
+
+
+State 4
+
+    1 S: S1 . '\n'
+
+    '\n'  shift, and go to state 10
+
+
+State 5
+
+    2 S1: E . ';' M3 S1
+    3   | E . ';'
+
+    ';'  shift, and go to state 11
+
+
+State 6
+
+    4 E: T . M1 L
+
+    $default  reduce using rule 15 (M1)
+
+    M1  go to state 12
+
+
+State 7
+
+    5 T: INT .
+
+    $default  reduce using rule 5 (T)
+
+
+State 8
+
+    6 T: REAL .
+
+    $default  reduce using rule 6 (T)
+
+
+State 9
+
+    0 $accept: S $end .
+
+    $default  accept
+
+
+State 10
+
+    1 S: S1 '\n' .
+
+    $default  reduce using rule 1 (S)
+
+
+State 11
+
+    2 S1: E ';' . M3 S1
+    3   | E ';' .
+
+    '\n'      reduce using rule 3 (S1)
+    $default  reduce using rule 17 (M3)
+
+    M3  go to state 13
+
+
+State 12
+
+    4 E: T M1 . L
+
+    'a'  shift, and go to state 14
+    'b'  shift, and go to state 15
+    'c'  shift, and go to state 16
+    'd'  shift, and go to state 17
+
+    L    go to state 18
+    VAR  go to state 19
+
+
+State 13
+
+    2 S1: E ';' M3 . S1
+
+    'i'  shift, and go to state 1
+    'r'  shift, and go to state 2
+
+    S1    go to state 20
+    E     go to state 5
+    T     go to state 6
+    INT   go to state 7
+    REAL  go to state 8
+
+
+State 14
+
+    9 VAR: 'a' .
+
+    $default  reduce using rule 9 (VAR)
+
+
+State 15
+
+   10 VAR: 'b' .
+
+    $default  reduce using rule 10 (VAR)
+
+
+State 16
+
+   11 VAR: 'c' .
+
+    $default  reduce using rule 11 (VAR)
+
+
+State 17
+
+   12 VAR: 'd' .
+
+    $default  reduce using rule 12 (VAR)
+
+
+State 18
+
+    4 E: T M1 L .
+
+    $default  reduce using rule 4 (E)
+
+
+State 19
+
+    7 L: VAR . ',' M2 L
+    8  | VAR .
+
+    ','  shift, and go to state 21
+
+    $default  reduce using rule 8 (L)
+
+
+State 20
+
+    2 S1: E ';' M3 S1 .
+
+    $default  reduce using rule 2 (S1)
+
+
+State 21
+
+    7 L: VAR ',' . M2 L
+
+    $default  reduce using rule 16 (M2)
+
+    M2  go to state 22
+
+
+State 22
+
+    7 L: VAR ',' M2 . L
+
+    'a'  shift, and go to state 14
+    'b'  shift, and go to state 15
+    'c'  shift, and go to state 16
+    'd'  shift, and go to state 17
+
+    L    go to state 23
+    VAR  go to state 19
+
+
+State 23
+
+    7 L: VAR ',' M2 L .
+
+    $default  reduce using rule 7 (L)

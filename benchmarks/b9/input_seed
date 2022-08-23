@@ -1,0 +1,23 @@
+2 + 3 = 0
+true + false = 2
+true + 2 = 2
+3 + true = 2
+2 - 5 = 0
+true - 2 = 2
+4 - false = 2
+true - false = 2
+true && false = 1
+1 && true = 2
+true && 2 = 2
+2 && 3 = 2
+true || false = 1
+1 || true = 2
+false || 4 = 2
+1 || 1 = 2
+true == false = 1
+1 == 1 = 1
+2 == false = 2
+true == 2 = 2
+1 + false == ( 2 + true ) = 2
+1 + false == 2 = 2
+2 == ( 2 + false ) = 2 

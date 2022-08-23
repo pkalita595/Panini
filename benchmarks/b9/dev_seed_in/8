@@ -1,0 +1,4 @@
+true && false
+1 && true
+true && 2
+2 && 3

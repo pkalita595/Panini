@@ -1,0 +1,79 @@
+//int[8][16][2] state;
+
+generator int _gen(int xReal, int yReal, int bnd)
+{
+	assert bnd >= 0;
+	int t = ??;
+	//int curr_p = p;
+	//choices[p++] = t;
+	if(t == 0) {return xReal;}
+	if(t == 2) {return yReal;}
+	int a = _gen(xReal, yReal,  bnd-1);
+	int b = _gen(xReal, yReal,  bnd-1);
+	if(t == 4) {return a + b;}
+	if(t == 5) {return a - b;}
+	else { return a * b;}
+}
+
+
+void add(int xReal, int yReal, ref int _out)
+{
+       int  p = 0;
+       int bnd = 1;
+       _out =  _gen(xReal,yReal, 1);  
+}
+
+
+//----------------------------
+int equal(int[8] A, int[8] B)
+{
+	for(int i=0;i<8;i++)
+	{
+		if(A[i] != B[i])
+			return 0;
+	}
+	return 1;
+} 
+
+harness int main() {
+	
+ /*	for(int i=0;i<2;i++)
+	{
+		for(int j=0;j<16;j++)
+		{
+			for(int k=0;k<8;k++) 
+			{
+				state[i][j][k] = 0;  
+			}
+		}
+	}
+ */
+	int BIG_SIZE = 1000;
+	int[BIG_SIZE] unknown;
+
+	unknown[0] = {| 4 | 8 |};
+	unknown[1] = 0;
+	unknown[2] = unknown[0];
+//m2
+	add(unknown[1], unknown[2], unknown[3]);
+	unknown[4] = unknown[2];
+	add(unknown[3], unknown[4], unknown[5]);
+	unknown[6] = unknown[5];
+	unknown[7] = unknown[6];
+	unknown[8] = unknown[7];
+	unknown[9] = {| 4 | 8 |};
+	unknown[10] = unknown[8];
+	unknown[11] = unknown[9];
+//m2
+	add(unknown[10], unknown[11], unknown[12]);
+	unknown[13] = unknown[11];
+	add(unknown[12], unknown[13], unknown[14]);
+	unknown[15] = unknown[14];
+	unknown[16] = unknown[15];
+	unknown[17] = unknown[16];
+	unknown[18] = unknown[17];
+	assert unknown[18] == 24;
+
+
+	return 0;
+}

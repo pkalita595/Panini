@@ -1,0 +1,33 @@
+generator bit gen(bit x,bit y,int bnd)
+{
+        assert bnd >= 0;
+        int choice = ??;
+        if(choice == 1)
+        {
+                return x;
+        }
+        if(choice == 2)
+        {
+                return y;
+        }
+        if(choice == 3)
+        {
+                return ~x;
+        }
+        if(choice == 4)
+        {
+                return ~y;
+        }
+
+        bit left = gen(x,y,bnd-1);
+        bit right = gen(x,y,bnd-1);
+
+        if(choice == 5)
+        {
+                return left | right;
+        }
+        else
+        {
+                return left & right;
+        }
+}

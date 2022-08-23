@@ -1,0 +1,11 @@
+2 + 3 = 5
+4 - 2 = 2
+4 / 4 = 1
+4 * 1 = 4
+if ( 2 * 3 != 1 + 1) then 3 * 2 + 4 ; else 2 * 3 - 3 ; = 10
+if ( 3 < 12 ) then 4 ; else 1 ; = 4
+if ( 12 <= 12 ) then 4 ; else 2 ; = 4
+if ( 31 > 12 ) then 4 ; else 3 ; = 4
+if ( 12 >= 12 ) then 4 ; else 4 ; = 4
+if ( 12 == 12 ) then 4 ; else 5 ; = 4
+if ( 3 != 12 ) then 4 ; else 6 ; = 4

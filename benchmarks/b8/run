@@ -1,0 +1,3 @@
+flex gram.l
+bison -d --defines="yacc.tab.h" --output="yacc.tab.c" -v gram.y
+g++ yacc.tab.c lex.yy.c oracle_funs.cpp -g -o gram

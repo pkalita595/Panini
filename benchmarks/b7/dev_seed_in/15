@@ -1,0 +1,5 @@
+if (  34  -  94 / 2  +  59  *  3 == 73  ) then  15  ; else  63  ;
+if (  NUM  -  NUM / NUM  +  NUM  *  NUM <= NUM  ) then  NUM  ; else  NUM  ;
+if (  NUM  -  NUM / NUM  +  NUM  *  NUM >= NUM  ) then  NUM  ; else  NUM  ;
+if (  NUM  -  NUM / NUM  +  NUM  *  NUM != NUM  ) then  NUM  ; else  NUM  ;
+if (  NUM  -  NUM / NUM  +  NUM  *  NUM == NUM  ) then  NUM  ; else  NUM  ;

@@ -1,0 +1,21 @@
+S : E '\n'
+
+E : T M2 L  { L.width = T.width; L.offset = 0; }
+
+
+T : INT     {T.width = 4;}
+
+  | REAL    {T.width = 8;}
+
+L : VAR ',' M1 L1 { printf(VAR = L.offset); M1 (L1.offset = L.offset + L.width; L1.width = L.width;)}   //simpler width = 4
+
+   | VAR    {print(VAR = L.offset)}
+
+int a , b , c
+op 
+assert a = 0 
+assert b = 4 
+assert c = 8;
+
+else 
+offset of c
