@@ -1,0 +1,1 @@
+0: bipush 10 ; 1: bipush 120 ; 2: bipush 5 ; 3: if_icmpgt 5 ;

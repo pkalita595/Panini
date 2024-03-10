@@ -1,0 +1,1 @@
+0: bipush 10 ; 1: ineg ; 2: istore_0 ; 3: istore_1 ; 4: istore_2 ; 5: istore_3 ; 6: iload_3 ;

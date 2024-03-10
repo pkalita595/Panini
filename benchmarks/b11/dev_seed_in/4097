@@ -1,0 +1,1 @@
+0: bipush 20 ; 1: bipush -1 ; 2:bipush 22; 3: ifne 4 ; 

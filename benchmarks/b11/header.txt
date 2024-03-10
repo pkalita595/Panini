@@ -1,0 +1,13 @@
+#include <cstdio>
+#include "gram.h"
+#include <assert.h>
+
+
+
+Node* Node::create(int  val_, Node*  next_){
+          void* temp= malloc( sizeof(Node)  ); 
+          Node* rv = new (temp)Node();
+          rv->val =  val_;
+          rv->next =  next_;
+          return rv;
+        }

@@ -1,0 +1,1 @@
+0: bipush 20 ; 1: bipush 9 ; 2: isub ;

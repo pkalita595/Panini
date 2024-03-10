@@ -1,0 +1,1 @@
+0: bipush 1 ; 1: bipush 10 ; 2: bipush 5 ; 3: if_icmple 5 ;

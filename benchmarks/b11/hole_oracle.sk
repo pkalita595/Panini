@@ -1,0 +1,143 @@
+void syn_bipush(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc ,int var1) //1
+{
+}
+
+void syn_istore(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc ,int var1) //2
+{
+}
+
+void syn_istore_0(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //3
+{
+}
+
+void syn_istore_1(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //4
+{
+}
+
+void syn_istore_2(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //5
+{
+}
+
+void syn_istore_3(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //6
+{
+}
+
+void syn_if_icmpeq(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //7
+{
+}
+
+void syn_if_icmplt(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //9
+{
+}
+
+void syn_if_icmple(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //10
+{
+}
+
+void syn_if_icmpgt(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //11
+{
+}
+
+void syn_if_icmpge(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //12
+{
+}
+
+void syn_ifeq(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //13
+{
+}
+
+void syn_ifne(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //14
+{
+}
+
+void syn_iflt(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //15
+{
+}
+
+void syn_ifle(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //16
+{
+}
+
+void syn_ifgt(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //17
+{
+}
+
+void syn_ifge(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //18
+{
+}
+
+void syn_iinc(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1,int var2) //19
+{
+}
+
+void syn_iconst_m1(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //20
+{
+}
+
+void syn_iconst_0(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //21
+{
+}
+
+void syn_iconst_1(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //22
+{
+}
+
+void syn_iconst_2(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //23
+{
+}
+
+void syn_iconst_3(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //24
+{
+}
+
+void syn_iconst_4(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //25
+{
+}
+
+void syn_iconst_5(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //26
+{
+}
+
+void syn_iload(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc,int var1) //27
+{
+}
+
+void syn_iload_0(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //28
+{
+}
+
+void syn_iload_1(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //29
+{
+}
+
+void syn_iload_2(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //30
+{
+}
+
+void syn_iload_3(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //31
+{
+}
+
+void syn_ineg(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //32
+{
+}
+
+void syn_iadd(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //33
+{
+}
+
+void syn_isub(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //34
+{
+}
+
+void syn_imul(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //35
+{
+}
+
+void syn_idiv(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //36
+{
+}
+
+void syn_irem(ref Stack stk, ref int[NUM_LOCALS] locals,ref int pc) //37
+{
+}

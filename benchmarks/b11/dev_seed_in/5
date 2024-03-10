@@ -1,0 +1,1 @@
+0: bipush 10 ; 1: bipush 20 ; 2: bipush 54 ; 3: bipush 32 ; 4: bipush 44; 5: istore_0 ;

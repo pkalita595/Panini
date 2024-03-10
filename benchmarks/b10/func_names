@@ -1,0 +1,14 @@
+addReal
+subReal
+mulReal
+divideReal
+powReal
+sinReal
+cosReal
+addDual
+subDual
+mulDual
+divideDual
+powDual
+sinDual
+cosDual

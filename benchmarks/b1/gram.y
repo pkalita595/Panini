@@ -40,7 +40,7 @@ B : ZERO	{$$ = $1;}
 int main()
 {
         //parse input expression to get output
-        FILE* input_stat = fopen("./input_stat","rke a third 'main.cpp'");
+        FILE* input_stat = fopen("./input_stat","r");
         system("wc input > input_stat ");
         int num_exp = 0;
 	dev = fopen("getDerivation", "a");
